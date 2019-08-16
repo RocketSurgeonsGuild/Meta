@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ItemGroup>
+    <GlobalPackageReference Include="Rocket.Surgery.Build.Metadata" Version="3.3.10" Condition="'$(MSBuildProjectName)'!='.build'" />
+    <!-- <GlobalPackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3" /> -->
+    <GlobalPackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0-preview.2" />
+    <GlobalPackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-19367-01" />
+    <GlobalPackageReference Include="Roslynator.Analyzers" Version="2.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Nuke.Common" Version="0.21.2" />
+    <PackageReference Update="Rocket.Surgery.Nuke.DotNetCore" Version="0.3.5" />
+    <PackageReference Update="GitVersion.CommandLine.DotNetCore" Version="5.0.1" />
+    <PackageReference Update="ReportGenerator" Version="4.2.15" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Rocket.Surgery.AspNetCore" Version="0.1.2" />
+    <PackageReference Update="Rocket.Surgery.Conventions" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Conventions.Abstractions" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Conventions.Diagnostics" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Extensions" Version="1.0.3" />
+    <PackageReference Update="Rocket.Surgery.Extensions.Abstractions" Version="1.0.3" />
+    <PackageReference Update="Rocket.Surgery.Extensions.App.Metrics" Version="0.2.5" />
+    <PackageReference Update="Rocket.Surgery.Extensions.App.Metrics.Abstractions" Version="0.2.5" />
+    <PackageReference Update="Rocket.Surgery.Extensions.AutoMapper" Version="6.0.0" />
+    <PackageReference Update="Rocket.Surgery.Extensions.CommandLine" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Extensions.Configuration" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Extensions.Configuration.Abstractions" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Extensions.FluentValidation" Version="4.0.5" />
+    <PackageReference Update="Rocket.Surgery.Extensions.FluentValidation.AspNetCore" Version="4.0.5" />
+    <PackageReference Update="Rocket.Surgery.Extensions.Logging" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Extensions.Logging.Abstractions" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Extensions.MediatR" Version="4.0.5" />
+    <PackageReference Update="Rocket.Surgery.Extensions.NodaTime" Version="0.1.3" />
+    <PackageReference Update="Rocket.Surgery.Extensions.Serilog" Version="6.0.4" />
+    <PackageReference Update="Rocket.Surgery.Extensions.Serilog.Abstractions" Version="6.0.4" />
+    <PackageReference Update="Rocket.Surgery.Extensions.Serilog.AspNetCore" Version="6.0.4" />
+    <PackageReference Update="Rocket.Surgery.Extensions.WebJobs" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Extensions.WebJobs.Abstractions" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Linq.Extensions" Version="1.0.3" />
+    <PackageReference Update="Rocket.Surgery.Reactive.Extensions" Version="1.0.3" />
+    <PackageReference Update="Rocket.Surgery.Task.Extensions" Version="1.0.3" />
+    <PackageReference Update="Rocket.Surgery.Hosting" Version="7.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Rocket.Surgery.Extensions.Testing" Version="1.1.13" />
+    <PackageReference Update="Autofac.Extras.FakeItEasy" Version="5.0.1" />
+    <PackageReference Update="Bogus" Version="28.0.2" />
+    <PackageReference Update="coverlet.collector" Version="1.0.1" />
+    <PackageReference Update="coverlet.msbuild" Version="2.6.3" />
+    <PackageReference Update="FakeItEasy" Version="5.1.1" />
+    <PackageReference Update="FakeItEasy.Analyzer.CSharp" Version="5.1.1" />
+    <PackageReference Update="FluentAssertions" Version="5.8.0" />
+    <PackageReference Update="FluentAssertions.Analyzers" Version="0.11.4" />
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Update="xunit" Version="2.4.1" />
+    <PackageReference Update="xunit.analyzers" Version="0.10.0" />
+    <PackageReference Update="xunit.runner.visualstudio" Version="2.4.1" />
+    <PackageReference Update="XunitXml.TestLogger" Version="2.1.26" />
+  </ItemGroup>
+</Project>

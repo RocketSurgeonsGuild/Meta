@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp2.1;netcoreapp3.0</TargetFrameworks>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Meta.Abstractions/Rocket.Surgery.Meta.Abstractions.csproj" />
+        <ProjectReference Include="../Meta.Core/Rocket.Surgery.Meta.Core.csproj" />
+        <ProjectReference Include="../Meta.Hosting/Rocket.Surgery.Meta.Hosting.csproj" />
+        <PackageReference Include="Rocket.Surgery.AspNetCore" />
+        <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.AspNetCore" />
+        <PackageReference Include="Rocket.Surgery.Extensions.Serilog.AspNetCore" />
+    </ItemGroup>
+</Project>
