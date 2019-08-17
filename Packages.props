@@ -44,6 +44,7 @@
     <PackageReference Update="Rocket.Surgery.Reactive.Extensions" Version="1.0.3" />
     <PackageReference Update="Rocket.Surgery.Task.Extensions" Version="1.0.3" />
     <PackageReference Update="Rocket.Surgery.Hosting" Version="7.0.2" />
+    <PackageReference Update="Rocket.Surgery.Hosting.Functions" Version="7.0.2" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="Rocket.Surgery.Extensions.Testing" Version="1.1.13" />
