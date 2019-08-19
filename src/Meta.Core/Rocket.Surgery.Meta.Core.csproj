@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp2.1;netcoreapp3.0</TargetFrameworks>
+        <TargetFrameworks>netstandard2.1;netcoreapp3.0;netstandard2.0;netcoreapp2.1</TargetFrameworks>
     </PropertyGroup>
     <ItemGroup>
         <ProjectReference Include="../Meta.Abstractions/Rocket.Surgery.Meta.Abstractions.csproj" />
@@ -17,7 +17,6 @@
         <PackageReference Include="Rocket.Surgery.Extensions.NodaTime" />
         <PackageReference Include="Rocket.Surgery.Extensions.Serilog" />
         <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" />
-        <PackageReference Include="Rocket.Surgery.Extensions" />
         <PackageReference Include="Rocket.Surgery.Linq.Extensions" />
         <PackageReference Include="Rocket.Surgery.Reactive.Extensions" />
         <PackageReference Include="Rocket.Surgery.Task.Extensions" />

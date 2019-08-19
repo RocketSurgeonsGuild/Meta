@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Meta.AspNetC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Meta.Functions", "src\Meta.Functions\Rocket.Surgery.Meta.Functions.csproj", "{E9C0640B-C387-43FB-B75C-8C2BD3833F8F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{9802A3DB-E506-45E2-B9CE-85B7AEA385DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meta.Hosting.Benchmarks", "benchmarks\Meta.Hosting.Benchmarks\Meta.Hosting.Benchmarks.csproj", "{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,18 @@ Global
 		{E9C0640B-C387-43FB-B75C-8C2BD3833F8F}.Release|x64.Build.0 = Release|Any CPU
 		{E9C0640B-C387-43FB-B75C-8C2BD3833F8F}.Release|x86.ActiveCfg = Release|Any CPU
 		{E9C0640B-C387-43FB-B75C-8C2BD3833F8F}.Release|x86.Build.0 = Release|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Debug|x64.Build.0 = Debug|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Debug|x86.Build.0 = Debug|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Release|x64.ActiveCfg = Release|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Release|x64.Build.0 = Release|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +151,7 @@ Global
 		{DC81DCCF-1F4E-4E4F-95EE-702CAE865CDB} = {8FFDF555-DB50-45F9-9A2D-6410F39151C3}
 		{066E47D4-5F3A-4098-9128-9A4C9FE5EF45} = {8FFDF555-DB50-45F9-9A2D-6410F39151C3}
 		{E9C0640B-C387-43FB-B75C-8C2BD3833F8F} = {8FFDF555-DB50-45F9-9A2D-6410F39151C3}
+		{AF320044-E48F-42BC-8D5D-59C2E03AA2C6} = {9802A3DB-E506-45E2-B9CE-85B7AEA385DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {439897C2-CCBD-44FE-B2DC-A3E4670ADA59}
