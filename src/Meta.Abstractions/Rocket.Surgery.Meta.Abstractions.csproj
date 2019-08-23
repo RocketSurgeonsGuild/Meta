@@ -10,7 +10,5 @@
         <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" />
         <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" />
         <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" />
-        <PackageReference Include="Rocket.Surgery.Extensions.WebJobs.Abstractions" />
-        <PackageReference Include="Rocket.Surgery.Extensions.Abstractions" />
     </ItemGroup>
 </Project>

@@ -4,6 +4,8 @@
     </PropertyGroup>
     <ItemGroup>
         <ProjectReference Include="../Meta.Abstractions/Rocket.Surgery.Meta.Abstractions.csproj" />
+    </ItemGroup>
+    <ItemGroup>
         <PackageReference Include="Rocket.Surgery.Conventions" />
         <PackageReference Include="Rocket.Surgery.Conventions.Diagnostics" Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp' or '$(TargetFrameworkIdentifier)' == '.NETFramework'" />
         <PackageReference Include="Rocket.Surgery.Extensions.App.Metrics" />
@@ -15,7 +17,6 @@
         <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
         <PackageReference Include="Rocket.Surgery.Extensions.MediatR" />
         <PackageReference Include="Rocket.Surgery.Extensions.Serilog" />
-        <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" />
         <PackageReference Include="Rocket.Surgery.Linq.Extensions" />
         <PackageReference Include="Rocket.Surgery.Reactive.Extensions" />
         <PackageReference Include="Rocket.Surgery.Task.Extensions" />
