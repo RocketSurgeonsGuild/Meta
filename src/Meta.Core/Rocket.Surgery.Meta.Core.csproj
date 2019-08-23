@@ -14,7 +14,6 @@
         <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" />
         <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
         <PackageReference Include="Rocket.Surgery.Extensions.MediatR" />
-        <PackageReference Include="Rocket.Surgery.Extensions.NodaTime" />
         <PackageReference Include="Rocket.Surgery.Extensions.Serilog" />
         <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" />
         <PackageReference Include="Rocket.Surgery.Linq.Extensions" />
