@@ -1,7 +1,0 @@
-﻿<Project>
-  <Import Project="$(MSBuildThisFileDirectory)\abstractions.targets" />
-  <Import Project="$(MSBuildThisFileDirectory)\aspnetcore.targets" />
-  <Import Project="$(MSBuildThisFileDirectory)\core.targets" />
-  <Import Project="$(MSBuildThisFileDirectory)\functions.targets" />
-  <Import Project="$(MSBuildThisFileDirectory)\hosting.targets" />
-</Project>

@@ -1,0 +1,17 @@
+﻿<Project>
+  <UseRocketSurgeryAbstractions>
+    <!-- This list needs to be in reverse order of the dependencies (leaf first) so that the changes cascade correctly. -->
+    <UseRocketSurgeryHosting Condition="'$(UseHosting)' == 'false' and '$(UseAspNetCore)' == 'true'">true</UseRocketSurgeryHosting>
+
+    <UseRocketSurgeryCore Condition="'$(UseCore)' == 'false' and '$(UseFunctions)' == 'true'">true</UseRocketSurgeryCore>
+    <UseRocketSurgeryCore Condition="'$(UseCore)' == 'false' and '$(UseHosting)' == 'true'">true</UseRocketSurgeryCore>
+    <UseRocketSurgeryCore Condition="'$(UseCore)' == 'false' and '$(UseAspNetCore)' == 'true'">true</UseRocketSurgeryCore>
+
+    <UseRocketSurgeryAbstractions Condition="'$(UseAbstractions)' == 'false' and '$(UseCore)' == 'true'">true</UseRocketSurgeryAbstractions>
+  </UseRocketSurgeryAbstractions>
+  <Import Project="$(MSBuildThisFileDirectory)\abstractions.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)\aspnetcore.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)\core.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)\functions.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)\hosting.targets" />
+</Project>
