@@ -1,5 +1,5 @@
 ﻿<Project>
-  <ItemGroup>
+  <PropertyGroup>
     <!-- This list needs to be in reverse order of the dependencies (leaf first) so that the changes cascade correctly. -->
     <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == 'false' and '$(IncludeRocketSurgeryAspNetCore)' == 'true'">true</IncludeRocketSurgeryHosting>
 
@@ -8,7 +8,7 @@
     <IncludeRocketSurgery Condition="'$(IncludeRocketSurgeryCore)' == 'false' and '$(IncludeRocketSurgeryAspNetCore)' == 'true'">true</IncludeRocketSurgery>
 
     <IncludeRocketSurgeryAbstractions Condition="'$(IncludeRocketSurgeryAbstractions)' == 'false' and '$(IncludeRocketSurgeryCore)' == 'true'">true</IncludeRocketSurgeryAbstractions>
-  </ItemGroup>
+  </PropertyGroup>
   <Import Project="$(MSBuildThisFileDirectory)\abstractions.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\aspnetcore.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\core.targets" />
