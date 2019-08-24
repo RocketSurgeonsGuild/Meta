@@ -1,13 +1,27 @@
 ﻿<Project>
   <PropertyGroup>
+    <IncludeRocketSurgeryAbstractions Condition="'$(IncludeRocketSurgeryAbstractions)' == ''">false</IncludeRocketSurgeryAbstractions>
+    <IncludeRocketSurgeryAspNetCore Condition="'$(IncludeRocketSurgeryAspNetCore)' == ''">false</IncludeRocketSurgeryAspNetCore>
+    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgery)' == ''">false</IncludeRocketSurgery>
+    <IncludeRocketSurgeryFunctions Condition="'$(IncludeRocketSurgeryFunctions)' == ''">false</IncludeRocketSurgeryFunctions>
+    <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == ''">false</IncludeRocketSurgeryHosting>
+
+    <EnableAppMetrics Condition="'$(EnableAppMetrics)' == ''">true</EnableAppMetrics>
+    <EnableAutoMapper Condition="'$(EnableAutoMapper)' == ''">true</EnableAutoMapper>
+    <EnableCommandLine Condition="'$(EnableCommandLine)' == ''">true</EnableCommandLine>
+    <EnableFluentValidation Condition="'$(EnableFluentValidation)' == ''">true</EnableFluentValidation>
+    <EnableMediatR Condition="'$(EnableMediatR)' == ''">true</EnableMediatR>
+    <EnableSerilog Condition="'$(EnableSerilog)' == ''">true</EnableSerilog>
+  </PropertyGroup>
+  <PropertyGroup>
     <!-- This list needs to be in reverse order of the dependencies (leaf first) so that the changes cascade correctly. -->
     <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == 'false' and '$(IncludeRocketSurgeryAspNetCore)' == 'true'">true</IncludeRocketSurgeryHosting>
 
-    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgeryCore)' == 'false' and '$(IncludeRocketSurgeryFunctions)' == 'true'">true</IncludeRocketSurgery>
-    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgeryCore)' == 'false' and '$(IncludeRocketSurgeryHosting)' == 'true'">true</IncludeRocketSurgery>
-    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgeryCore)' == 'false' and '$(IncludeRocketSurgeryAspNetCore)' == 'true'">true</IncludeRocketSurgery>
+    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgery)' == 'false' and '$(IncludeRocketSurgeryFunctions)' == 'true'">true</IncludeRocketSurgery>
+    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgery)' == 'false' and '$(IncludeRocketSurgeryHosting)' == 'true'">true</IncludeRocketSurgery>
+    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgery)' == 'false' and '$(IncludeRocketSurgeryAspNetCore)' == 'true'">true</IncludeRocketSurgery>
 
-    <IncludeRocketSurgeryAbstractions Condition="'$(IncludeRocketSurgeryAbstractions)' == 'false' and '$(IncludeRocketSurgeryCore)' == 'true'">true</IncludeRocketSurgeryAbstractions>
+    <IncludeRocketSurgeryAbstractions Condition="'$(IncludeRocketSurgeryAbstractions)' == 'false' and '$(IncludeRocketSurgery)' == 'true'">true</IncludeRocketSurgeryAbstractions>
   </PropertyGroup>
   <Import Project="$(MSBuildThisFileDirectory)\abstractions.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\aspnetcore.targets" />

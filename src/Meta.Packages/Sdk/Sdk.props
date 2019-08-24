@@ -1,16 +1,2 @@
 ﻿<Project>
-  <PropertyGroup>
-    <IncludeRocketSurgeryAbstractions Condition="'$(IncludeRocketSurgeryAbstractions)' == ''">false</IncludeRocketSurgeryAbstractions>
-    <IncludeRocketSurgeryAspNetCore Condition="'$(IncludeRocketSurgeryAspNetCore)' == ''">false</IncludeRocketSurgeryAspNetCore>
-    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgeryCore)' == ''">false</IncludeRocketSurgery>
-    <IncludeRocketSurgeryFunctions Condition="'$(IncludeRocketSurgeryFunctions)' == ''">false</IncludeRocketSurgeryFunctions>
-    <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == ''">false</IncludeRocketSurgeryHosting>
-
-    <EnableAppMetrics Condition="'$(EnableAppMetrics)' == ''">true</EnableAppMetrics>
-    <EnableAutoMapper Condition="'$(EnableAutoMapper)' == ''">true</EnableAutoMapper>
-    <EnableCommandLine Condition="'$(EnableCommandLine)' == ''">true</EnableCommandLine>
-    <EnableFluentValidation Condition="'$(EnableFluentValidation)' == ''">true</EnableFluentValidation>
-    <EnableMediatR Condition="'$(EnableMediatR)' == ''">true</EnableMediatR>
-    <EnableSerilog Condition="'$(EnableSerilog)' == ''">true</EnableSerilog>
-  </PropertyGroup>
 </Project>
