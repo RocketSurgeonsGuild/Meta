@@ -1,14 +1,14 @@
 ﻿<Project>
-  <UseRocketSurgeryAbstractions>
+  <ItemGroup>
     <!-- This list needs to be in reverse order of the dependencies (leaf first) so that the changes cascade correctly. -->
-    <UseRocketSurgeryHosting Condition="'$(UseHosting)' == 'false' and '$(UseAspNetCore)' == 'true'">true</UseRocketSurgeryHosting>
+    <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == 'false' and '$(IncludeRocketSurgeryAspNetCore)' == 'true'">true</IncludeRocketSurgeryHosting>
 
-    <UseRocketSurgery Condition="'$(UseCore)' == 'false' and '$(UseFunctions)' == 'true'">true</UseRocketSurgery>
-    <UseRocketSurgery Condition="'$(UseCore)' == 'false' and '$(UseHosting)' == 'true'">true</UseRocketSurgery>
-    <UseRocketSurgery Condition="'$(UseCore)' == 'false' and '$(UseAspNetCore)' == 'true'">true</UseRocketSurgery>
+    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgeryCore)' == 'false' and '$(IncludeRocketSurgeryFunctions)' == 'true'">true</IncludeRocketSurgery>
+    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgeryCore)' == 'false' and '$(IncludeRocketSurgeryHosting)' == 'true'">true</IncludeRocketSurgery>
+    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgeryCore)' == 'false' and '$(IncludeRocketSurgeryAspNetCore)' == 'true'">true</IncludeRocketSurgery>
 
-    <UseRocketSurgeryAbstractions Condition="'$(UseAbstractions)' == 'false' and '$(UseCore)' == 'true'">true</UseRocketSurgeryAbstractions>
-  </UseRocketSurgeryAbstractions>
+    <IncludeRocketSurgeryAbstractions Condition="'$(IncludeRocketSurgeryAbstractions)' == 'false' and '$(IncludeRocketSurgeryCore)' == 'true'">true</IncludeRocketSurgeryAbstractions>
+  </ItemGroup>
   <Import Project="$(MSBuildThisFileDirectory)\abstractions.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\aspnetcore.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\core.targets" />

@@ -1,5 +1,5 @@
 <Project>
-    <ItemGroup Condition="'$(UseCore)' == 'true'">
+    <ItemGroup Condition="'$(IncludeRocketSurgery)' == 'true'">
         <PackageReference Include="Rocket.Surgery.Conventions" />
         <PackageReference Include="Rocket.Surgery.Conventions.Diagnostics" Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp' or '$(TargetFrameworkIdentifier)' == '.NETFramework'" />
         <PackageReference Include="Rocket.Surgery.Extensions.App.Metrics" Condition="'$(EnableAppMetrics)' == 'true'" />

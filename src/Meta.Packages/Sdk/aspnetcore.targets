@@ -1,5 +1,5 @@
 <Project>
-    <ItemGroup Condition="'$(UseAspNetCore)' == 'true'">
+    <ItemGroup Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true'">
         <PackageReference Include="Rocket.Surgery.AspNetCore" />
         <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.AspNetCore" Condition="'$(EnableFluentValidation)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Serilog.AspNetCore" Condition="'$(EnableSerilog)' == 'true'" />

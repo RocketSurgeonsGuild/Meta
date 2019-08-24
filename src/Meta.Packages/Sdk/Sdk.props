@@ -1,10 +1,10 @@
 ﻿<Project>
   <PropertyGroup>
-    <UseRocketSurgeryAbstractions Condition="'$(UseAbstractions)' == ''">false</UseRocketSurgeryAbstractions>
-    <UseRocketSurgery Condition="'$(UseCore)' == ''">false</UseRocketSurgery>
-    <UseRocketSurgeryFunctions Condition="'$(UseFunctions)' == ''">false</UseRocketSurgeryFunctions>
-    <UseRocketSurgeryHosting Condition="'$(UseHosting)' == ''">false</UseRocketSurgeryHosting>
-    <UseRocketSurgeryAspNetCore Condition="'$(UseAspNetCore)' == ''">false</UseRocketSurgeryAspNetCore>
+    <IncludeRocketSurgeryAbstractions Condition="'$(IncludeRocketSurgeryAbstractions)' == ''">false</IncludeRocketSurgeryAbstractions>
+    <IncludeRocketSurgeryAspNetCore Condition="'$(IncludeRocketSurgeryAspNetCore)' == ''">false</IncludeRocketSurgeryAspNetCore>
+    <IncludeRocketSurgery Condition="'$(IncludeRocketSurgeryCore)' == ''">false</IncludeRocketSurgery>
+    <IncludeRocketSurgeryFunctions Condition="'$(IncludeRocketSurgeryFunctions)' == ''">false</IncludeRocketSurgeryFunctions>
+    <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == ''">false</IncludeRocketSurgeryHosting>
 
     <EnableAppMetrics Condition="'$(EnableAppMetrics)' == ''">true</EnableAppMetrics>
     <EnableAutoMapper Condition="'$(EnableAutoMapper)' == ''">true</EnableAutoMapper>
