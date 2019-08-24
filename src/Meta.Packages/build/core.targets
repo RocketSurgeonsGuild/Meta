@@ -1,0 +1,19 @@
+<Project>
+    <ItemGroup Condition="'$(UseCore)' == 'true'">
+        <PackageReference Include="Rocket.Surgery.Conventions" />
+        <PackageReference Include="Rocket.Surgery.Conventions.Diagnostics" Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp' or '$(TargetFrameworkIdentifier)' == '.NETFramework'" />
+        <PackageReference Include="Rocket.Surgery.Extensions.App.Metrics" Condition="'$(EnableAppMetrics)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Condition="'$(EnableAutoMapper)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Condition="'$(EnableCommandLine)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.Extensions.Configuration" />
+        <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" />
+        <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Condition="'$(EnableFluentValidation)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
+        <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Condition="'$(EnableMediatR)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Condition="'$(EnableSerilog)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.Extensions" />
+        <PackageReference Include="Rocket.Surgery.Linq.Extensions" />
+        <PackageReference Include="Rocket.Surgery.Reactive.Extensions" />
+        <PackageReference Include="Rocket.Surgery.Task.Extensions" />
+    </ItemGroup>
+</Project>

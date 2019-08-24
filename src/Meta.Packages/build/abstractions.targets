@@ -1,0 +1,11 @@
+<Project>
+    <ItemGroup Condition="'$(UseAbstractions)' == 'true'">
+        <PackageReference Include="Rocket.Surgery.Conventions.Abstractions" />
+        <PackageReference Include="Rocket.Surgery.Extensions.App.Metrics.Abstractions" Condition="'$(EnableAppMetrics)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" Condition="'$(EnableCommandLine)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" />
+        <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" />
+        <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" />
+        <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" Condition="'$(EnableSerilog)' == 'true'" />
+    </ItemGroup>
+</Project>

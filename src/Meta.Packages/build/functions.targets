@@ -1,0 +1,6 @@
+<Project>
+    <ItemGroup Condition="'$(UseFunctions)' == 'true'">
+        <PackageReference Include="Rocket.Surgery.Extensions.WebJobs" />
+        <PackageReference Include="Rocket.Surgery.Hosting.Functions" />
+    </ItemGroup>
+</Project>

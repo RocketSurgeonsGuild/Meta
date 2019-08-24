@@ -1,0 +1,5 @@
+<Project>
+    <ItemGroup Condition="'$(UseHosting)' == 'true'">
+        <PackageReference Include="Rocket.Surgery.Hosting" />
+    </ItemGroup>
+</Project>
