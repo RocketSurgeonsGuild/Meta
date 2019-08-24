@@ -3,9 +3,9 @@
     <!-- This list needs to be in reverse order of the dependencies (leaf first) so that the changes cascade correctly. -->
     <UseRocketSurgeryHosting Condition="'$(UseHosting)' == 'false' and '$(UseAspNetCore)' == 'true'">true</UseRocketSurgeryHosting>
 
-    <UseRocketSurgeryCore Condition="'$(UseCore)' == 'false' and '$(UseFunctions)' == 'true'">true</UseRocketSurgeryCore>
-    <UseRocketSurgeryCore Condition="'$(UseCore)' == 'false' and '$(UseHosting)' == 'true'">true</UseRocketSurgeryCore>
-    <UseRocketSurgeryCore Condition="'$(UseCore)' == 'false' and '$(UseAspNetCore)' == 'true'">true</UseRocketSurgeryCore>
+    <UseRocketSurgery Condition="'$(UseCore)' == 'false' and '$(UseFunctions)' == 'true'">true</UseRocketSurgery>
+    <UseRocketSurgery Condition="'$(UseCore)' == 'false' and '$(UseHosting)' == 'true'">true</UseRocketSurgery>
+    <UseRocketSurgery Condition="'$(UseCore)' == 'false' and '$(UseAspNetCore)' == 'true'">true</UseRocketSurgery>
 
     <UseRocketSurgeryAbstractions Condition="'$(UseAbstractions)' == 'false' and '$(UseCore)' == 'true'">true</UseRocketSurgeryAbstractions>
   </UseRocketSurgeryAbstractions>

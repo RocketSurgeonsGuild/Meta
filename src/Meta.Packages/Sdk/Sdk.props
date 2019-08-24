@@ -1,7 +1,7 @@
 ﻿<Project>
   <PropertyGroup>
     <UseRocketSurgeryAbstractions Condition="'$(UseAbstractions)' == ''">false</UseRocketSurgeryAbstractions>
-    <UseRocketSurgeryCore Condition="'$(UseCore)' == ''">false</UseRocketSurgeryCore>
+    <UseRocketSurgery Condition="'$(UseCore)' == ''">false</UseRocketSurgery>
     <UseRocketSurgeryFunctions Condition="'$(UseFunctions)' == ''">false</UseRocketSurgeryFunctions>
     <UseRocketSurgeryHosting Condition="'$(UseHosting)' == ''">false</UseRocketSurgeryHosting>
     <UseRocketSurgeryAspNetCore Condition="'$(UseAspNetCore)' == ''">false</UseRocketSurgeryAspNetCore>
