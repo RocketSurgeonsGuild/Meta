@@ -6,6 +6,7 @@
     <IncludeRocketSurgeryFunctions Condition="'$(IncludeRocketSurgeryFunctions)' == ''">false</IncludeRocketSurgeryFunctions>
     <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == ''">false</IncludeRocketSurgeryHosting>
 
+    <EnableDiagnostics Condition="'$(EnableDiagnostics)' == ''">true</EnableDiagnostics>
     <EnableAppMetrics Condition="'$(EnableAppMetrics)' == ''">true</EnableAppMetrics>
     <EnableAutoMapper Condition="'$(EnableAutoMapper)' == ''">true</EnableAutoMapper>
     <EnableCommandLine Condition="'$(EnableCommandLine)' == ''">true</EnableCommandLine>
