@@ -13,6 +13,7 @@
     <EnableFluentValidation Condition="'$(EnableFluentValidation)' == ''">true</EnableFluentValidation>
     <EnableMediatR Condition="'$(EnableMediatR)' == ''">true</EnableMediatR>
     <EnableSerilog Condition="'$(EnableSerilog)' == ''">true</EnableSerilog>
+    <EnableExtensions Condition="'$(EnableExtensions)' == ''">true</EnableExtensions>
   </PropertyGroup>
   <PropertyGroup>
     <!-- This list needs to be in reverse order of the dependencies (leaf first) so that the changes cascade correctly. -->
@@ -22,7 +23,7 @@
     <IncludeRocketSurgery Condition="'$(IncludeRocketSurgery)' == 'false' and '$(IncludeRocketSurgeryHosting)' == 'true'">true</IncludeRocketSurgery>
     <IncludeRocketSurgery Condition="'$(IncludeRocketSurgery)' == 'false' and '$(IncludeRocketSurgeryAspNetCore)' == 'true'">true</IncludeRocketSurgery>
 
-    <IncludeRocketSurgeryAbstractions Condition="'$(IncludeRocketSurgeryAbstractions)' == 'false' and '$(IncludeRocketSurgery)' == 'true'">true</IncludeRocketSurgeryAbstractions>
+    <!-- <IncludeRocketSurgeryAbstractions Condition="'$(IncludeRocketSurgeryAbstractions)' == 'false' and '$(IncludeRocketSurgery)' == 'true'">true</IncludeRocketSurgeryAbstractions> -->
   </PropertyGroup>
   <Import Project="$(MSBuildThisFileDirectory)\abstractions.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\aspnetcore.targets" />
