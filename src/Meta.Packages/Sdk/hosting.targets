@@ -1,6 +1,7 @@
 <Project>
     <ItemGroup Condition="'$(IncludeRocketSurgeryHosting)' == 'true'">
         <PackageReference Include="Rocket.Surgery.Hosting" />
+        <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Condition="'$(EnableAutofac)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Hosting.Serilog" Condition="'$(EnableSerilog)' == 'true'" />
     </ItemGroup>
 </Project>

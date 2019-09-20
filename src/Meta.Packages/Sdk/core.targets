@@ -3,6 +3,7 @@
         <PackageReference Include="Rocket.Surgery.Conventions" />
         <PackageReference Include="Rocket.Surgery.Conventions.Diagnostics" Condition="('$(EnableDiagnostics)' == 'true') and ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' or '$(TargetFrameworkIdentifier)' == '.NETFramework')" />
         <PackageReference Include="Rocket.Surgery.Extensions.App.Metrics" Condition="'$(EnableAppMetrics)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Condition="'$(EnableAutofac)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Condition="'$(EnableAutoMapper)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" Condition="'$(EnableCommandLine)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Configuration" />
