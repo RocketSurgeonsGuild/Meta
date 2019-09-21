@@ -7,7 +7,7 @@
     <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == ''">false</IncludeRocketSurgeryHosting>
 
     <EnableDiagnostics Condition="'$(EnableDiagnostics)' == ''">true</EnableDiagnostics>
-    <EnableAppMetrics Condition="'$(EnableAppMetrics)' == ''">true</EnableAppMetrics>
+    <EnableAppMetrics Condition="'$(EnableAppMetrics)' == ''">false</EnableAppMetrics>
     <EnableAutofac Condition="'$(EnableAutofac)' == ''">false</EnableAutofac>
     <EnableAutoMapper Condition="'$(EnableAutoMapper)' == ''">true</EnableAutoMapper>
     <EnableCommandLine Condition="'$(EnableCommandLine)' == ''">true</EnableCommandLine>
