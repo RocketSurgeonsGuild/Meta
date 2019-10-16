@@ -2,6 +2,7 @@
   <PropertyGroup>
     <IncludeRocketSurgeryAbstractions Condition="'$(IncludeRocketSurgeryAbstractions)' == ''">false</IncludeRocketSurgeryAbstractions>
     <IncludeRocketSurgeryAspNetCore Condition="'$(IncludeRocketSurgeryAspNetCore)' == ''">false</IncludeRocketSurgeryAspNetCore>
+    <IncludeRocketSurgeryAspNetCoreNewtonsoftJson Condition="'$(IncludeRocketSurgeryAspNetCoreNewtonsoftJson)' == ''">false</IncludeRocketSurgeryAspNetCoreNewtonsoftJson>
     <IncludeRocketSurgery Condition="'$(IncludeRocketSurgery)' == ''">false</IncludeRocketSurgery>
     <IncludeRocketSurgeryFunctions Condition="'$(IncludeRocketSurgeryFunctions)' == ''">false</IncludeRocketSurgeryFunctions>
     <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == ''">false</IncludeRocketSurgeryHosting>
