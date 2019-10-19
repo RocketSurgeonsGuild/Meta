@@ -1,5 +1,6 @@
 <Project>
     <ItemGroup Condition="'$(IncludeRocketSurgeryHosting)' == 'true'">
+        <PackageReference Include="Rocket.Surgery.Conventions.Diagnostics" Condition="('$(EnableDiagnostics)' == 'true' and '$(EnableCommandLine)' == 'true') and ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' or '$(TargetFrameworkIdentifier)' == '.NETFramework')" />
         <PackageReference Include="Rocket.Surgery.Hosting" />
     </ItemGroup>
 </Project>
