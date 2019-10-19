@@ -2,9 +2,5 @@
     <ItemGroup Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true'">
         <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Condition="'$(EnableNewtonsoftJson)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.AspNetCore" />
-        <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Condition="'$(EnableFluentValidation)' == 'true'" />
-        <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.MediatR" Condition="'$(EnableFluentValidation)' == 'true' AND '$(EnableMediatR)' == 'true'" />
-        <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Condition="'$(EnableFluentValidation)' == 'true' AND '$(EnableNewtonsoftJson)' == 'true'" />
-        <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Condition="'$(EnableSerilog)' == 'true'" />
     </ItemGroup>
 </Project>
