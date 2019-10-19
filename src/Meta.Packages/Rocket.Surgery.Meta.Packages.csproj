@@ -2,6 +2,11 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;netstandard2.0;netstandard1.3</TargetFrameworks>
     <DevelopmentDependency>true</DevelopmentDependency>
+    <AssemblyTitle>
+    Provides an MSBuild Sdk that allows you to not have to include all the dependencies in your project.
+    Instead based on the properties defined implicit PackageReference items will be added, with the intention that the version will be managed else where using a PackageReference Update
+    </AssemblyTitle>
+    <PackageTags>$(PackageTags);sdk;packagereference;packages</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <None Include="Sdk/*.*" Pack="true" PackagePath="Sdk" />
