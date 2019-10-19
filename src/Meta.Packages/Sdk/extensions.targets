@@ -1,0 +1,8 @@
+<Project>
+    <ItemGroup Condition="'$(EnableExtensions)' == 'true'">
+        <PackageReference Include="Rocket.Surgery.Extensions" />
+        <PackageReference Include="Rocket.Surgery.Linq.Extensions" />
+        <PackageReference Include="Rocket.Surgery.Reactive.Extensions" />
+        <PackageReference Include="Rocket.Surgery.Task.Extensions" />
+    </ItemGroup>
+</Project>
