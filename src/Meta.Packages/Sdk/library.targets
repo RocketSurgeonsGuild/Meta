@@ -31,6 +31,6 @@
         <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" Condition="'$(IncludeRocketSurgeryAbstractions)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Condition="'$(IncludeRocketSurgeryHosting)' != 'true' AND '$(IncludeRocketSurgeryAspNetCore)' != 'true'" />
-        <PackageReference Include="Rocket.Surgery.Hosting.Serilog" Condition="'$(IncludeRocketSurgeryHosting)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.Hosting.Serilog" Condition="'$(IncludeRocketSurgeryHosting)' == 'true' AND '$(IncludeRocketSurgeryAspNetCore)' != 'true'" />
     </ItemGroup>
 </Project>
