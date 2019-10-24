@@ -5,6 +5,11 @@
     <IncludeRocketSurgery Condition="'$(IncludeRocketSurgery)' == ''">false</IncludeRocketSurgery>
     <IncludeRocketSurgeryFunctions Condition="'$(IncludeRocketSurgeryFunctions)' == ''">false</IncludeRocketSurgeryFunctions>
     <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == ''">false</IncludeRocketSurgeryHosting>
+    <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgeryAbstractions)' == 'true'">true</__RocketSurgeryEnabled>
+    <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgeryAspNetCore)' == 'true'">true</__RocketSurgeryEnabled>
+    <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgery)' == 'true'">true</__RocketSurgeryEnabled>
+    <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgeryFunctions)' == 'true'">true</__RocketSurgeryEnabled>
+    <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgeryHosting)' == 'true'">true</__RocketSurgeryEnabled>
 
     <EnableAppMetrics Condition="'$(EnableAppMetrics)' == ''">false</EnableAppMetrics>
     <EnableAutofac Condition="'$(EnableAutofac)' == ''">false</EnableAutofac>
