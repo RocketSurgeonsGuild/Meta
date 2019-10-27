@@ -15,7 +15,6 @@
         <PackageReference Include="Rocket.Surgery.Extensions" />
         <PackageReference Include="Rocket.Surgery.Linq.Extensions" />
         <PackageReference Include="Rocket.Surgery.Reactive.Extensions" />
-        <PackageReference Include="Rocket.Surgery.Task.Extensions" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableFluentValidation)' == 'true'">
         <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true'" />
