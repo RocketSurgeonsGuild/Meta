@@ -4,14 +4,14 @@
         <PackageReference Include="Rocket.Surgery.Extensions.App.Metrics" Condition="'$(IncludeRocketSurgeryHosting)' != 'true'" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableAutofac)' == 'true'">
-        <PackageReference Include="Autofac" />
-        <PackageReference Include="Autofac.Extensions.DependencyInjection" />
+        <PackageReference Include="Autofac" Condition="'$(IncludeBaseLibrary)' == 'true'" />
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Condition="'$(IncludeBaseLibrary)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" Condition="'$(IncludeRocketSurgeryAbstractions)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Condition="'$(IncludeRocketSurgeryHosting)' != 'true'" />
         <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Condition="'$(IncludeRocketSurgeryHosting)' == 'true'" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableAutoMapper)' == 'true'">
-        <PackageReference Include="AutoMapper" />
+        <PackageReference Include="AutoMapper" Condition="'$(IncludeBaseLibrary)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableExtensions)' == 'true'">
@@ -20,7 +20,7 @@
         <PackageReference Include="Rocket.Surgery.Reactive.Extensions" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableFluentValidation)' == 'true'">
-        <PackageReference Include="FluentValidation" />
+        <PackageReference Include="FluentValidation" Condition="'$(IncludeBaseLibrary)' == 'true'" />
         <PackageReference Include="FluentValidation.AspNetCore" Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true'" />
         <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Condition="'$(IncludeRocketSurgeryAspNetCore)' != 'true'" />
         <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true'" />
@@ -28,8 +28,15 @@
         <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Condition="'$(IncludeRocketSurgeryAspNetCore)' != 'true'" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableMediatR)' == 'true'">
-        <PackageReference Include="MediatR" />
+        <PackageReference Include="MediatR" Condition="'$(IncludeBaseLibrary)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.MediatR" />
+    </ItemGroup>
+    <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableSwashbuckle)' == 'true' AND '$(IncludeRocketSurgeryAspNetCore)' == 'true'">
+        <PackageReference Include="Swashbuckle.AspNetCore" Condition="'$(IncludeBaseLibrary)' == 'true'" />
+        <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" Condition="'$(IncludeBaseLibrary)' == 'true'" />
+        <PackageReference Include="MicroElements.Swashbuckle.FluentValidation" Condition="'$(IncludeBaseLibrary)' == 'true' AND '$(EnableFluentValidation)' == 'true'" />
+        <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle" />
+        <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson" Condition="'$(EnableNewtonsoftJson)' == 'true'"/>
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableSerilog)' == 'true'">
         <PackageReference Include="Serilog" />

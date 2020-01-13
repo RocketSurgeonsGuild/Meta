@@ -11,6 +11,7 @@
     <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgeryFunctions)' == 'true'">true</__RocketSurgeryEnabled>
     <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgeryHosting)' == 'true'">true</__RocketSurgeryEnabled>
 
+    <IncludeBaseLibrary Condition="'$(IncludeBaseLibrary)' == ''">true</IncludeBaseLibrary>
     <EnableExtras Condition="'$(EnableExtras)' == ''">true</EnableExtras>
     <EnableAppMetrics Condition="'$(EnableAppMetrics)' == ''">false</EnableAppMetrics>
     <EnableAutofac Condition="'$(EnableAutofac)' == ''">false</EnableAutofac>

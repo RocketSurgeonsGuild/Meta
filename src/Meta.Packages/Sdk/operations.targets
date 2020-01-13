@@ -5,8 +5,4 @@
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableOperations)' == 'true' AND '$(IncludeRocketSurgeryAspNetCore)' == 'true'">
         <PackageReference Include="Rocket.Surgery.Operational.AspNetCore.MediatR" />
     </ItemGroup>
-    <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableSwashbuckle)' == 'true' AND '$(IncludeRocketSurgeryAspNetCore)' == 'true'">
-        <PackageReference Include="Rocket.Surgery.Operational.Swashbuckle" />
-        <PackageReference Include="Rocket.Surgery.Operational.Swashbuckle.NewtonsoftJson" Condition="'$(EnableNewtonsoftJson)' == 'true'"/>
-    </ItemGroup>
 </Project>
