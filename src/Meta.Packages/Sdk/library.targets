@@ -4,11 +4,14 @@
         <PackageReference Include="Rocket.Surgery.Extensions.App.Metrics" Condition="'$(IncludeRocketSurgeryHosting)' != 'true'" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableAutofac)' == 'true'">
+        <PackageReference Include="Autofac" />
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" />
         <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" Condition="'$(IncludeRocketSurgeryAbstractions)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Condition="'$(IncludeRocketSurgeryHosting)' != 'true'" />
         <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Condition="'$(IncludeRocketSurgeryHosting)' == 'true'" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableAutoMapper)' == 'true'">
+        <PackageReference Include="AutoMapper" />
         <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableExtensions)' == 'true'">
@@ -17,16 +20,19 @@
         <PackageReference Include="Rocket.Surgery.Reactive.Extensions" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableFluentValidation)' == 'true'">
+        <PackageReference Include="FluentValidation" />
+        <PackageReference Include="FluentValidation.AspNetCore" Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true'" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Condition="'$(IncludeRocketSurgeryAspNetCore)' != 'true'" />
         <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true'" />
-        <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.MediatR" Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true' AND '$(EnableMediatR)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true' AND '$(EnableNewtonsoftJson)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Condition="'$(IncludeRocketSurgeryAspNetCore)' != 'true'" />
-        <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.MediatR" Condition="'$(IncludeRocketSurgeryAspNetCore)' != 'true' AND '$(EnableMediatR)' == 'true'" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableMediatR)' == 'true'">
+        <PackageReference Include="MediatR" />
         <PackageReference Include="Rocket.Surgery.Extensions.MediatR" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableSerilog)' == 'true'">
+        <PackageReference Include="Serilog" />
         <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" Condition="'$(IncludeRocketSurgeryAbstractions)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Condition="'$(IncludeRocketSurgeryHosting)' != 'true' AND '$(IncludeRocketSurgeryAspNetCore)' != 'true'" />

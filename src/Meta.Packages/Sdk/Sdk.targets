@@ -11,29 +11,37 @@
     <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgeryFunctions)' == 'true'">true</__RocketSurgeryEnabled>
     <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgeryHosting)' == 'true'">true</__RocketSurgeryEnabled>
 
+    <EnableExtras Condition="'$(EnableExtras)' == ''">true</EnableExtras>
     <EnableAppMetrics Condition="'$(EnableAppMetrics)' == ''">false</EnableAppMetrics>
     <EnableAutofac Condition="'$(EnableAutofac)' == ''">false</EnableAutofac>
+    <EnableAutoMapper Condition="'$(EnableOperations)' == 'true'">true</EnableAutoMapper>
     <EnableAutoMapper Condition="'$(EnableAutoMapper)' == ''">true</EnableAutoMapper>
     <EnableCommandLine Condition="'$(EnableCommandLine)' == ''">false</EnableCommandLine>
     <EnableConfiguration Condition="'$(EnableConfiguration)' == ''">true</EnableConfiguration>
     <EnableDependencyInjection Condition="'$(EnableDependencyInjection)' == ''">true</EnableDependencyInjection>
     <EnableDiagnostics Condition="'$(EnableDiagnostics)' == ''">true</EnableDiagnostics>
     <EnableExtensions Condition="'$(EnableExtensions)' == ''">true</EnableExtensions>
+    <EnableFluentValidation Condition="'$(EnableOperations)' == 'true'">true</EnableFluentValidation>
     <EnableFluentValidation Condition="'$(EnableFluentValidation)' == ''">true</EnableFluentValidation>
     <EnableLogging Condition="'$(EnableLogging)' == ''">true</EnableLogging>
+    <EnableMediatR Condition="'$(EnableOperations)' == 'true'">true</EnableMediatR>
     <EnableMediatR Condition="'$(EnableMediatR)' == ''">true</EnableMediatR>
     <EnableNewtonsoftJson Condition="'$(EnableNewtonsoftJson)' == ''">true</EnableNewtonsoftJson>
     <EnableSerilog Condition="'$(EnableSerilog)' == ''">true</EnableSerilog>
     <EnableWebJobs Condition="'$(EnableWebJobs)' == ''">false</EnableWebJobs>
+    <EnableOperations Condition="'$(EnableOperations)' == ''">false</EnableOperations>
+    <EnableSwashbuckle Condition="'$(EnableSwashbuckle)' == ''">false</EnableSwashbuckle>
   </PropertyGroup>
   <PropertyGroup>
     <!-- This list needs to be in reverse order of the dependencies (leaf first) so that the changes cascade correctly. -->
     <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == 'false' and '$(IncludeRocketSurgeryAspNetCore)' == 'true'">true</IncludeRocketSurgeryHosting>
   </PropertyGroup>
+  <Import Project="$(MSBuildThisFileDirectory)\extras.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\abstractions.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\aspnetcore.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\core.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\functions.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\hosting.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\library.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)\operations.targets" />
 </Project>

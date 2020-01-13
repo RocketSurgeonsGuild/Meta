@@ -1,0 +1,9 @@
+<Project>
+    <ItemGroup Condition="'$(EnableExtras)' == 'true'">
+        <PackageReference Include="System.Collections.Immutable" />
+        <PackageReference Include="System.Interactive" />
+        <PackageReference Include="System.Interactive.Async" />
+        <PackageReference Include="System.Reactive" />
+        <PackageReference Include="System.Reactive.Observable.Aliases" />
+    </ItemGroup>
+</Project>
