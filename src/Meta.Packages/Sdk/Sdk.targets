@@ -27,7 +27,7 @@
     <EnableLogging Condition="'$(EnableLogging)' == ''">true</EnableLogging>
     <EnableMediatR Condition="'$(EnableOperations)' == 'true'">true</EnableMediatR>
     <EnableMediatR Condition="'$(EnableMediatR)' == ''">true</EnableMediatR>
-    <EnableNewtonsoftJson Condition="'$(EnableNewtonsoftJson)' == ''">true</EnableNewtonsoftJson>
+    <EnableNewtonsoftJson Condition="'$(EnableNewtonsoftJson)' == ''">false</EnableNewtonsoftJson>
     <EnableSerilog Condition="'$(EnableSerilog)' == ''">true</EnableSerilog>
     <EnableWebJobs Condition="'$(EnableWebJobs)' == ''">false</EnableWebJobs>
     <EnableOperations Condition="'$(EnableOperations)' == ''">false</EnableOperations>
