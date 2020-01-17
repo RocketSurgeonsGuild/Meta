@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Meta.Commands/Rocket.Surgery.Meta.Commands.csproj" />
+    <ProjectReference Include="../../src/Meta.Operations/Rocket.Surgery.Meta.Operations.csproj" />
+  </ItemGroup>
+</Project>

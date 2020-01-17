@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Serilog" />
+    <ProjectReference Include="../Meta.System/Rocket.Surgery.Meta.System.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build/*.*" Pack="true" PackagePath="build" />
+    <None Include="buildMultiTargeting/*.*" Pack="true" PackagePath="buildMultiTargeting" />
+    <None Include="buildTransitive/*.*" Pack="true" PackagePath="buildTransitive" />
+  </ItemGroup>
+</Project>
