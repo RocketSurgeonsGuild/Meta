@@ -18,12 +18,20 @@ Meta packages for Rocket Surgeons
 <!-- history badges -->
 
 <!-- nuget packages -->
-| Package | NuGet | MyGet |
-| ------- | ----- | ----- |
-| Rocket.Surgery.Meta.Core | [![nuget-version-q487aq+odzyg-badge]![nuget-downloads-q487aq+odzyg-badge]][nuget-q487aq+odzyg] | [![myget-version-q487aq+odzyg-badge]![myget-downloads-q487aq+odzyg-badge]][myget-q487aq+odzyg] |
-| Rocket.Surgery.Meta.Abstractions | [![nuget-version-snesrsrsfbhw-badge]![nuget-downloads-snesrsrsfbhw-badge]][nuget-snesrsrsfbhw] | [![myget-version-snesrsrsfbhw-badge]![myget-downloads-snesrsrsfbhw-badge]][myget-snesrsrsfbhw] |
-| Rocket.Surgery.Meta.Hosting | [![nuget-version-dgqpyi++aiaa-badge]![nuget-downloads-dgqpyi++aiaa-badge]][nuget-dgqpyi++aiaa] | [![myget-version-dgqpyi++aiaa-badge]![myget-downloads-dgqpyi++aiaa-badge]][myget-dgqpyi++aiaa] |
-| Rocket.Surgery.Meta.AspNetCore | [![nuget-version-utcucrrdr6bg-badge]![nuget-downloads-utcucrrdr6bg-badge]][nuget-utcucrrdr6bg] | [![myget-version-utcucrrdr6bg-badge]![myget-downloads-utcucrrdr6bg-badge]][myget-utcucrrdr6bg] |
+| Package | NuGet |
+| ------- | ----- |
+| Rocket.Surgery.Meta.Packages | [![nuget-version-iqth4wy/lwbw-badge]![nuget-downloads-iqth4wy/lwbw-badge]][nuget-iqth4wy/lwbw] |
+| Rocket.Surgery.Meta.Api | [![nuget-version-ycexi7k1guba-badge]![nuget-downloads-ycexi7k1guba-badge]][nuget-ycexi7k1guba] |
+| Rocket.Surgery.Meta.Api.Operations | [![nuget-version-mrettq1xh3ja-badge]![nuget-downloads-mrettq1xh3ja-badge]][nuget-mrettq1xh3ja] |
+| Rocket.Surgery.Meta.AspNetCore | [![nuget-version-utcucrrdr6bg-badge]![nuget-downloads-utcucrrdr6bg-badge]][nuget-utcucrrdr6bg] |
+| Rocket.Surgery.Meta.Commands | [![nuget-version-fuw/xmjy7uha-badge]![nuget-downloads-fuw/xmjy7uha-badge]][nuget-fuw/xmjy7uha] |
+| Rocket.Surgery.Meta.Core | [![nuget-version-q487aq+odzyg-badge]![nuget-downloads-q487aq+odzyg-badge]][nuget-q487aq+odzyg] |
+| Rocket.Surgery.Meta.Functions | [![nuget-version-7kwgeqjedhja-badge]![nuget-downloads-7kwgeqjedhja-badge]][nuget-7kwgeqjedhja] |
+| Rocket.Surgery.Meta.Hosting | [![nuget-version-dgqpyi++aiaa-badge]![nuget-downloads-dgqpyi++aiaa-badge]][nuget-dgqpyi++aiaa] |
+| Rocket.Surgery.Meta.Operations | [![nuget-version-uojjymcdx/dq-badge]![nuget-downloads-uojjymcdx/dq-badge]][nuget-uojjymcdx/dq] |
+| Rocket.Surgery.Meta.System | [![nuget-version-zvynufbn7p3w-badge]![nuget-downloads-zvynufbn7p3w-badge]][nuget-zvynufbn7p3w] |
+| Rocket.Surgery.Meta.Api.NewtonsoftJson | [![nuget-version-5t+mtjr3jb8a-badge]![nuget-downloads-5t+mtjr3jb8a-badge]][nuget-5t+mtjr3jb8a] |
+| Rocket.Surgery.Meta.AspNetCore.NewtonsoftJson | [![nuget-version-volm5qtkpqnw-badge]![nuget-downloads-volm5qtkpqnw-badge]][nuget-volm5qtkpqnw] |
 <!-- nuget packages -->
 
 # Whats next?
@@ -45,30 +53,42 @@ TBD
 [appveyor-badge]: https://img.shields.io/appveyor/ci/RocketSurgeonsGuild/meta.svg?color=00b3e0&label=appveyor&logo=appveyor&logoColor=00b3e0&style=flat "AppVeyor Status"
 [appveyor-history]: https://ci.appveyor.com/project/RocketSurgeonsGuild/meta/history
 [appveyor-history-badge]: https://buildstats.info/appveyor/chart/RocketSurgeonsGuild/meta?includeBuildsFromPullRequest=false "AppVeyor History"
-[nuget-q487aq+odzyg]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Core/
-[nuget-version-q487aq+odzyg-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Core.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
-[nuget-downloads-q487aq+odzyg-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Core.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
-[myget-q487aq+odzyg]: https://www.myget.org/feed/rocket-surgeons-guild/package/nuget/Rocket.Surgery.Meta.Core
-[myget-version-q487aq+odzyg-badge]: https://img.shields.io/myget/rocket-surgeons-guild/vpre/Rocket.Surgery.Meta.Core.svg?label=myget&color=004880&logo=nuget&style=flat-square "MyGet Pre-Release Version"
-[myget-downloads-q487aq+odzyg-badge]: https://img.shields.io/myget/rocket-surgeons-guild/dt/Rocket.Surgery.Meta.Core.svg?color=004880&logo=nuget&style=flat-square "MyGet Downloads"
-[nuget-snesrsrsfbhw]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Abstractions/
-[nuget-version-snesrsrsfbhw-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Abstractions.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
-[nuget-downloads-snesrsrsfbhw-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Abstractions.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
-[myget-snesrsrsfbhw]: https://www.myget.org/feed/rocket-surgeons-guild/package/nuget/Rocket.Surgery.Meta.Abstractions
-[myget-version-snesrsrsfbhw-badge]: https://img.shields.io/myget/rocket-surgeons-guild/vpre/Rocket.Surgery.Meta.Abstractions.svg?label=myget&color=004880&logo=nuget&style=flat-square "MyGet Pre-Release Version"
-[myget-downloads-snesrsrsfbhw-badge]: https://img.shields.io/myget/rocket-surgeons-guild/dt/Rocket.Surgery.Meta.Abstractions.svg?color=004880&logo=nuget&style=flat-square "MyGet Downloads"
-[nuget-dgqpyi++aiaa]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Hosting/
-[nuget-version-dgqpyi++aiaa-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Hosting.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
-[nuget-downloads-dgqpyi++aiaa-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Hosting.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
-[myget-dgqpyi++aiaa]: https://www.myget.org/feed/rocket-surgeons-guild/package/nuget/Rocket.Surgery.Meta.Hosting
-[myget-version-dgqpyi++aiaa-badge]: https://img.shields.io/myget/rocket-surgeons-guild/vpre/Rocket.Surgery.Meta.Hosting.svg?label=myget&color=004880&logo=nuget&style=flat-square "MyGet Pre-Release Version"
-[myget-downloads-dgqpyi++aiaa-badge]: https://img.shields.io/myget/rocket-surgeons-guild/dt/Rocket.Surgery.Meta.Hosting.svg?color=004880&logo=nuget&style=flat-square "MyGet Downloads"
+[nuget-iqth4wy/lwbw]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Packages/
+[nuget-version-iqth4wy/lwbw-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Packages.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-iqth4wy/lwbw-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Packages.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[nuget-ycexi7k1guba]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Api/
+[nuget-version-ycexi7k1guba-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Api.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-ycexi7k1guba-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Api.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[nuget-mrettq1xh3ja]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Api.Operations/
+[nuget-version-mrettq1xh3ja-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Api.Operations.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-mrettq1xh3ja-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Api.Operations.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
 [nuget-utcucrrdr6bg]: https://www.nuget.org/packages/Rocket.Surgery.Meta.AspNetCore/
 [nuget-version-utcucrrdr6bg-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.AspNetCore.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
 [nuget-downloads-utcucrrdr6bg-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.AspNetCore.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
-[myget-utcucrrdr6bg]: https://www.myget.org/feed/rocket-surgeons-guild/package/nuget/Rocket.Surgery.Meta.AspNetCore
-[myget-version-utcucrrdr6bg-badge]: https://img.shields.io/myget/rocket-surgeons-guild/vpre/Rocket.Surgery.Meta.AspNetCore.svg?label=myget&color=004880&logo=nuget&style=flat-square "MyGet Pre-Release Version"
-[myget-downloads-utcucrrdr6bg-badge]: https://img.shields.io/myget/rocket-surgeons-guild/dt/Rocket.Surgery.Meta.AspNetCore.svg?color=004880&logo=nuget&style=flat-square "MyGet Downloads"
+[nuget-fuw/xmjy7uha]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Commands/
+[nuget-version-fuw/xmjy7uha-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Commands.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-fuw/xmjy7uha-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Commands.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[nuget-q487aq+odzyg]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Core/
+[nuget-version-q487aq+odzyg-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Core.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-q487aq+odzyg-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Core.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[nuget-7kwgeqjedhja]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Functions/
+[nuget-version-7kwgeqjedhja-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Functions.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-7kwgeqjedhja-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Functions.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[nuget-dgqpyi++aiaa]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Hosting/
+[nuget-version-dgqpyi++aiaa-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Hosting.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-dgqpyi++aiaa-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Hosting.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[nuget-uojjymcdx/dq]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Operations/
+[nuget-version-uojjymcdx/dq-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Operations.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-uojjymcdx/dq-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Operations.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[nuget-zvynufbn7p3w]: https://www.nuget.org/packages/Rocket.Surgery.Meta.System/
+[nuget-version-zvynufbn7p3w-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.System.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-zvynufbn7p3w-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.System.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[nuget-5t+mtjr3jb8a]: https://www.nuget.org/packages/Rocket.Surgery.Meta.Api.NewtonsoftJson/
+[nuget-version-5t+mtjr3jb8a-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.Api.NewtonsoftJson.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-5t+mtjr3jb8a-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.Api.NewtonsoftJson.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
+[nuget-volm5qtkpqnw]: https://www.nuget.org/packages/Rocket.Surgery.Meta.AspNetCore.NewtonsoftJson/
+[nuget-version-volm5qtkpqnw-badge]: https://img.shields.io/nuget/v/Rocket.Surgery.Meta.AspNetCore.NewtonsoftJson.svg?color=004880&logo=nuget&style=flat-square "NuGet Version"
+[nuget-downloads-volm5qtkpqnw-badge]: https://img.shields.io/nuget/dt/Rocket.Surgery.Meta.AspNetCore.NewtonsoftJson.svg?color=004880&logo=nuget&style=flat-square "NuGet Downloads"
 <!-- generated references -->
 
 <!-- nuke-data
@@ -82,6 +102,4 @@ azurepipelines:
 appveyor:
   account: RocketSurgeonsGuild
   build: meta
-myget:
-  account: rocket-surgeons-guild
 -->
