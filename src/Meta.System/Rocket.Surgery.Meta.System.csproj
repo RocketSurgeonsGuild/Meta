@@ -3,6 +3,7 @@
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Rocket.Surgery.Extensions.Abstractions" />
     <PackageReference Include="Rocket.Surgery.Linq.Extensions" />
     <PackageReference Include="Rocket.Surgery.Reactive.Extensions" />
     <PackageReference Include="System.Collections.Immutable" />

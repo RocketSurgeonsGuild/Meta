@@ -11,7 +11,7 @@ using Rocket.Surgery.AspNetCore.FluentValidation;
 // Unused parameter.
 // ReSharper disable UnusedParameter.Global
 
-namespace Rocket.Surgery.Operational.AspNetCore.MediatR
+namespace Rocket.Surgery.Meta.Operations
 {
     [PublicAPI]
     public static class MediatorApiConventions

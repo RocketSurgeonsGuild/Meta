@@ -1,6 +1,6 @@
 using System;
 using JetBrains.Annotations;
-using Rocket.Surgery.Operational.MediatR;
+using Rocket.Surgery.Meta.Operations;
 
 // ReSharper disable once CheckNamespace
 namespace Rocket.Surgery.Conventions

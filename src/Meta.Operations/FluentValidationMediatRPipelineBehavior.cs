@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using FluentValidation;
 using MediatR;
 
-namespace Rocket.Surgery.Operational.MediatR
+namespace Rocket.Surgery.Meta.Operations
 {
     internal class FluentValidationMediatRPipelineBehavior<T, R> : IPipelineBehavior<T, R>
     {
