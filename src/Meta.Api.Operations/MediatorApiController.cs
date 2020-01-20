@@ -6,7 +6,7 @@ using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Rocket.Surgery.Operational.AspNetCore.MediatR
+namespace Rocket.Surgery.Meta.Operations
 {
     /// <summary>
     /// Default controller that integrates with <see cref="IMediator" />

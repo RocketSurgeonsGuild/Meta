@@ -6,11 +6,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Rocket.Surgery.Conventions;
 using Rocket.Surgery.Extensions.DependencyInjection;
-using Rocket.Surgery.Operational.MediatR;
+using Rocket.Surgery.Meta.Operations;
 
 [assembly: Convention(typeof(MediatorROperationsConvention))]
 
-namespace Rocket.Surgery.Operational.MediatR
+namespace Rocket.Surgery.Meta.Operations
 {
     /// <summary>
     /// ValidationConvention.
