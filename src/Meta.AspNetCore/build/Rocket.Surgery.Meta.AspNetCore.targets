@@ -1,0 +1,7 @@
+<Project>
+    <PropertyGroup>
+        <IncludeRocketSurgeryAspNetCore Condition="'$(IncludeRocketSurgeryAspNetCore)' == ''">true</IncludeRocketSurgeryAspNetCore>
+        <EnableFluentValidation Condition="'$(EnableFluentValidation)' == ''">true</EnableFluentValidation>
+        <EnableSerilog Condition="'$(EnableSerilog)' == ''">true</EnableSerilog>
+    </PropertyGroup>
+</Project>

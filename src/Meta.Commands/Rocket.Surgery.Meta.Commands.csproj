@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Rocket.Surgery.Extensions.CommandLine" PrivateAssets="contentfiles" />
+    <ProjectReference Include="../Meta.System/Rocket.Surgery.Meta.System.csproj" PrivateAssets="contentfiles" />
+    <ProjectReference Include="../Meta.Hosting/Rocket.Surgery.Meta.Hosting.csproj" PrivateAssets="contentfiles" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build/*.*" Pack="true" PackagePath="build" />
+    <None Include="buildMultiTargeting/*.*" Pack="true" PackagePath="buildMultiTargeting" />
+    <None Include="buildTransitive/*.*" Pack="true" PackagePath="buildTransitive" />
+  </ItemGroup>
+</Project>

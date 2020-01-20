@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" />
+    <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" />
+    <ProjectReference Include="../Meta.System/Rocket.Surgery.Meta.System.csproj" />
+    <ProjectReference Include="../Meta.Hosting/Rocket.Surgery.Meta.Hosting.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build/*.*" Pack="true" PackagePath="build" />
+    <None Include="buildMultiTargeting/*.*" Pack="true" PackagePath="buildMultiTargeting" />
+    <None Include="buildTransitive/*.*" Pack="true" PackagePath="buildTransitive" />
+  </ItemGroup>
+</Project>

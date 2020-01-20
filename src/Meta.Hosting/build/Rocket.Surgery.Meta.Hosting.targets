@@ -1,0 +1,5 @@
+<Project>
+    <PropertyGroup>
+        <IncludeRocketSurgeryHosting Condition="'$(IncludeRocketSurgeryHosting)' == ''">true</IncludeRocketSurgeryHosting>
+    </PropertyGroup>
+</Project>

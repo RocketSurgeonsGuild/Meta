@@ -1,0 +1,6 @@
+<Project>
+    <PropertyGroup>
+        <IncludeBaseLibrary Condition="'$(IncludeBaseLibrary)' == ''">true</IncludeBaseLibrary>
+        <EnableExtensions Condition="'$(EnableExtensions)' == ''">true</EnableExtensions>
+    </PropertyGroup>
+</Project>

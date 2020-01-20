@@ -1,8 +1,0 @@
-<Project>
-    <ItemGroup Condition="'$(IncludeRocketSurgeryAbstractions)' == 'true'">
-        <PackageReference Include="Rocket.Surgery.Extensions.CommandLine.Abstractions" Condition="'$(EnableCommandLine)' == 'true'" />
-        <PackageReference Include="Rocket.Surgery.Extensions.Configuration.Abstractions" Condition="'$(EnableConfiguration)' == 'true'" />
-        <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Condition="'$(EnableDependencyInjection)' == 'true'" />
-        <PackageReference Include="Rocket.Surgery.Extensions.Logging.Abstractions" Condition="'$(EnableLogging)' == 'true'" />
-    </ItemGroup>
-</Project>
