@@ -1,0 +1,5 @@
+<Project>
+    <PropertyGroup>
+        <EnableOperations Condition="'$(EnableOperations)' == ''">true</EnableOperations>
+    </PropertyGroup>
+</Project>

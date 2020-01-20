@@ -1,0 +1,8 @@
+<Project>
+    <PropertyGroup>
+        <EnableConfiguration Condition="'$(EnableConfiguration)' == ''">true</EnableConfiguration>
+        <EnableDependencyInjection Condition="'$(EnableDependencyInjection)' == ''">true</EnableDependencyInjection>
+        <EnableLogging Condition="'$(EnableLogging)' == ''">true</EnableLogging>
+        <EnableSerilog Condition="'$(EnableSerilog)' == ''">true</EnableSerilog>
+    </PropertyGroup>
+</Project>

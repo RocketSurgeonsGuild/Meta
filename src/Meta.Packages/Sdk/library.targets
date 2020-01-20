@@ -1,12 +1,10 @@
 <Project>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableAppMetrics)' == 'true'">
-        <PackageReference Include="Rocket.Surgery.Extensions.App.Metrics.Abstractions" Condition="'$(IncludeRocketSurgeryAbstractions)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.App.Metrics" Condition="'$(IncludeRocketSurgeryHosting)' != 'true'" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableAutofac)' == 'true'">
         <PackageReference Include="Autofac" Condition="'$(IncludeBaseLibrary)' == 'true'" />
         <PackageReference Include="Autofac.Extensions.DependencyInjection" Condition="'$(IncludeBaseLibrary)' == 'true'" />
-        <PackageReference Include="Rocket.Surgery.Extensions.Autofac.Abstractions" Condition="'$(IncludeRocketSurgeryAbstractions)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Autofac" Condition="'$(IncludeRocketSurgeryHosting)' != 'true'" />
         <PackageReference Include="Rocket.Surgery.Hosting.Autofac" Condition="'$(IncludeRocketSurgeryHosting)' == 'true'" />
     </ItemGroup>
@@ -15,7 +13,7 @@
         <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" />
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableExtensions)' == 'true'">
-        <PackageReference Include="Rocket.Surgery.Extensions" />
+        <!-- <PackageReference Include="Rocket.Surgery.Extensions" /> -->
         <PackageReference Include="Rocket.Surgery.Linq.Extensions" />
         <PackageReference Include="Rocket.Surgery.Reactive.Extensions" />
     </ItemGroup>
@@ -39,9 +37,8 @@
         <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson" Condition="'$(EnableNewtonsoftJson)' == 'true'"/>
     </ItemGroup>
     <ItemGroup Condition="'$(__RocketSurgeryEnabled)' == 'true' AND '$(EnableSerilog)' == 'true'">
-        <PackageReference Include="Serilog" />
+        <PackageReference Include="Serilog" Condition="'$(IncludeBaseLibrary)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.AspNetCore.Serilog" Condition="'$(IncludeRocketSurgeryAspNetCore)' == 'true'" />
-        <PackageReference Include="Rocket.Surgery.Extensions.Serilog.Abstractions" Condition="'$(IncludeRocketSurgeryAbstractions)' == 'true'" />
         <PackageReference Include="Rocket.Surgery.Extensions.Serilog" Condition="'$(IncludeRocketSurgeryHosting)' != 'true' AND '$(IncludeRocketSurgeryAspNetCore)' != 'true'" />
         <PackageReference Include="Rocket.Surgery.Hosting.Serilog" Condition="'$(IncludeRocketSurgeryHosting)' == 'true' AND '$(IncludeRocketSurgeryAspNetCore)' != 'true'" />
     </ItemGroup>
