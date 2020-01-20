@@ -5,10 +5,6 @@
     </PropertyGroup>
     <ItemGroup>
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
-        <PackageReference Include="Rocket.Surgery.AspNetCore.Swashbuckle" />
-        <PackageReference Include="Swashbuckle.AspNetCore" PrivateAssets="none" />
-        <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" />
-        <PackageReference Include="MicroElements.Swashbuckle.FluentValidation" />
         <ProjectReference Include="../Meta.AspNetCore/Rocket.Surgery.Meta.AspNetCore.csproj" />
     </ItemGroup>
     <ItemGroup>
