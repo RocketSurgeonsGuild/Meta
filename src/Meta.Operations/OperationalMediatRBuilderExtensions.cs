@@ -9,14 +9,14 @@ namespace Rocket.Surgery.Conventions
     /// FluentValidationHostBuilderExtensions.
     /// </summary>
     [PublicAPI]
-    public static class OperationalMediatRBuilderExtensions
+    public static class OperationalBuilderExtensions
     {
         /// <summary>
         /// Adds fluent validation.
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <returns>IConventionHostBuilder.</returns>
-        public static IConventionHostBuilder UseMediatROperations(this IConventionHostBuilder builder)
+        public static IConventionHostBuilder UseOperations(this IConventionHostBuilder builder)
         {
             if (builder is null)
             {

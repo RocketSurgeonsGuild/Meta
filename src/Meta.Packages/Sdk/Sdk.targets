@@ -41,5 +41,4 @@
   <Import Project="$(MSBuildThisFileDirectory)\functions.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\hosting.targets" />
   <Import Project="$(MSBuildThisFileDirectory)\library.targets" />
-  <!-- <Import Project="$(MSBuildThisFileDirectory)\operations.targets" /> -->
 </Project>
