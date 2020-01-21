@@ -45,7 +45,7 @@
     <PackageReference Update="System.Interactive.Async" Version="4.0.0" />
     <PackageReference Update="System.Reactive" Version="4.3.2" />
     <PackageReference Update="System.Reactive.Observable.Aliases" Version="4.3.2" />
-    <PackageReference Update="Rocket.Surgery.Extensions.Abstractions" Version="2.2.0" />
+    <PackageReference Update="Rocket.Surgery.Extensions.Abstractions" Version="2.2.1" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="Bogus" Version="28.4.4" />
