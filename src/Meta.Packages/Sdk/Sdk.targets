@@ -9,8 +9,11 @@
     <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgeryFunctions)' == 'true'">true</__RocketSurgeryEnabled>
     <__RocketSurgeryEnabled Condition="'$(__RocketSurgeryEnabled)' == '' AND '$(IncludeRocketSurgeryHosting)' == 'true'">true</__RocketSurgeryEnabled>
 
-    <IncludeBaseLibrary Condition="'$(IncludeBaseLibrary)' == ''">false</IncludeBaseLibrary>
+    <IncludeBaseLibrary Condition="'$(IncludeBaseLibrary)' == ''">true</IncludeBaseLibrary>
     <EnableOperations Condition="'$(EnableOperations)' == ''">false</EnableOperations>
+    <EnableExtensions Condition="'$(EnableExtensions)' == ''">false</EnableExtensions>
+    <EnableExtras Condition="'$(IncludeBaseLibrary)' == 'true' AND '$(EnableExtras)' == ''">true</EnableExtras>
+    <EnableExtras Condition="'$(EnableExtensions)' == 'true' AND '$(EnableExtras)' == ''">true</EnableExtras>
     <EnableExtras Condition="'$(EnableExtras)' == ''">$(IncludeBaseLibrary)</EnableExtras>
     <EnableAppMetrics Condition="'$(EnableAppMetrics)' == ''">false</EnableAppMetrics>
     <EnableAutofac Condition="'$(EnableAutofac)' == ''">false</EnableAutofac>
@@ -20,7 +23,6 @@
     <EnableConfiguration Condition="'$(EnableConfiguration)' == ''">false</EnableConfiguration>
     <EnableDependencyInjection Condition="'$(EnableDependencyInjection)' == ''">false</EnableDependencyInjection>
     <EnableDiagnostics Condition="'$(EnableDiagnostics)' == ''">false</EnableDiagnostics>
-    <EnableExtensions Condition="'$(EnableExtensions)' == ''">false</EnableExtensions>
     <EnableFluentValidation Condition="'$(EnableFluentValidation)' == '' AND '$(EnableOperations)' == 'true'">true</EnableFluentValidation>
     <EnableFluentValidation Condition="'$(EnableFluentValidation)' == ''">false</EnableFluentValidation>
     <EnableLogging Condition="'$(EnableLogging)' == ''">false</EnableLogging>

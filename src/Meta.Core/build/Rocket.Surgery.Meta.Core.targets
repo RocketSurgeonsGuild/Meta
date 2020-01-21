@@ -1,5 +1,6 @@
 <Project>
     <PropertyGroup>
+        <IncludeRocketSurgery Condition="'$(IncludeRocketSurgery)' == ''">true</IncludeRocketSurgery>
         <EnableConfiguration Condition="'$(EnableConfiguration)' == ''">true</EnableConfiguration>
         <EnableDependencyInjection Condition="'$(EnableDependencyInjection)' == ''">true</EnableDependencyInjection>
         <EnableLogging Condition="'$(EnableLogging)' == ''">true</EnableLogging>
